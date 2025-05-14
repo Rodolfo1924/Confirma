@@ -2,8 +2,8 @@ import cv2
 from ultralytics import YOLO
 
 def main():
-    # Cargar modelo YOLO
-    face_model = YOLO("C:/Users/rodol/Downloads/archive/yolov8n-face-lindevs.pt")  # Modelo específico para rostros
+    # Cargar modelo YOLO, Cambiar el url
+    face_model = YOLO("yolov8n-face-lindevs.pt")  # Modelo específico para rostros
     
     # Abrir cámara
     cap = cv2.VideoCapture(0)
